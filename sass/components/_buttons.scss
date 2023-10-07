@@ -1,0 +1,24 @@
+@use "../abstracts/functions" as f;
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: f.rem(25px);
+    box-shadow: 0px 24px 19px -8px rgba(0,0,0,0.3);
+
+    background-color: var(--color-white);
+    padding: f.rem(10px) f.rem(75px);
+    border-radius: 4rem;
+    transition: all 0.3s;
+
+    &:hover {
+        color: var(--color-white);
+        background-color: var(--color-soft-magenta);
+    }
+}
+
+@media (width >= 62.5em) {
+    .btn {
+        padding: f.rem(10px) f.rem(55px);
+    }
+}

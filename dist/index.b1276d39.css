@@ -1,0 +1,232 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+ul[role="list"], ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizespeed;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *, :before, :after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+:root {
+  --color-violet: #674baf;
+  --color-soft-magenta: #e882e8;
+  --color-white: #fff;
+}
+
+del, s {
+  text-decoration: line-through;
+}
+
+mark:before, mark:after, del:before, del:after, ins:before, ins:after, s:before, s:after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+s:before {
+  content: " [strike-through start] ";
+}
+
+s:after {
+  content: " [strike-through end] ";
+}
+
+body {
+  place-content: center;
+  height: 100%;
+  padding: .625rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  display: grid;
+}
+
+.c-hero {
+  background-color: var(--color-violet);
+  background-image: url("bg-mobile.210284ac.svg");
+  background-repeat: repeat-x;
+  flex-direction: column;
+  max-width: 20.3125rem;
+  padding: 1.875rem;
+  display: flex;
+}
+
+.huddle-logo {
+  width: 7.5rem;
+}
+
+.c-hero__container {
+  text-align: center;
+  margin-top: 3.125rem;
+}
+
+.c-hero__container-text {
+  color: var(--color-white);
+  margin-top: 3.125rem;
+}
+
+.c-hero__secondary-heading {
+  font-size: 1.375rem;
+}
+
+.c-hero__desc {
+  margin-top: 1.5625rem;
+  font-family: Open Sans, sans-serif;
+  font-size: .875rem;
+}
+
+.c-hero__logos-container {
+  justify-content: center;
+  gap: .625rem;
+  margin-top: 4.375rem;
+  padding-left: 0;
+  display: flex;
+}
+
+.c-hero__logos-btn {
+  border: 1px solid #ededed;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+}
+
+.c-hero__logos-btn:hover {
+  border: 1px solid var(--color-soft-magenta);
+}
+
+.c-hero__logos-btn:hover .c-hero__logo {
+  color: var(--color-soft-magenta);
+}
+
+.c-hero__logo {
+  color: var(--color-white);
+  justify-content: center;
+  align-items: center;
+  width: .3125rem;
+  height: .3125rem;
+  transition: all .3s;
+  display: flex;
+}
+
+@media (width >= 62.5em) {
+  .c-hero {
+    background-image: url("bg-desktop.fc15d5a1.svg");
+    max-width: 90rem;
+    padding: 2.1875rem 3.4375rem;
+  }
+
+  .huddle-logo {
+    width: 12.5rem;
+  }
+
+  .c-hero__container {
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.125rem;
+    margin: 4.375rem auto 0;
+    display: grid;
+  }
+
+  .c-hero__container-img {
+    width: 43.75rem;
+  }
+
+  .c-hero__container-text {
+    text-wrap: balance;
+    margin-top: 1.5625rem;
+  }
+
+  .c-hero__secondary-heading {
+    font-size: 2.5rem;
+  }
+
+  .c-hero__desc {
+    margin-top: 1.5625rem;
+    font-size: 1rem;
+  }
+
+  .c-hero__logos-container {
+    margin-left: auto;
+  }
+
+  .c-hero__logos-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .c-hero__logo {
+    width: .5rem;
+    height: .5rem;
+  }
+}
+
+.btn {
+  background-color: var(--color-white);
+  border-radius: 4rem;
+  margin-top: 1.5625rem;
+  padding: .625rem 4.6875rem;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+  box-shadow: 0 24px 19px -8px #0000004d;
+}
+
+.btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-soft-magenta);
+}
+
+@media (width >= 62.5em) {
+  .btn {
+    padding: .625rem 3.4375rem;
+  }
+}
+
+/*# sourceMappingURL=index.b1276d39.css.map */
