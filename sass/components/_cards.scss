@@ -5,27 +5,18 @@
 /**************************/
 
 .c-hero {
-    background-color: var(--color-violet);
-    background-image: url(./images/bg-mobile.svg);
-    background-repeat: repeat-x;
-
-    max-width: f.rem(325px);
+    max-width: f.rem(375px);
+    margin-top: f.rem(85px);
 
     display: flex;
     flex-direction: column;
     padding: f.rem(30px);
 }
 
-/* HERO LOGO */
-/**************************/
-.huddle-logo {
-    width: f.rem(120px);
-}
 
 /* HERO Container: Half IMG, Half Text */
 /**************************/
 .c-hero__container {
-    margin-top: f.rem(50px);
     text-align: center;
 }
 
@@ -91,25 +82,17 @@
 }
 
 
-@media (width >= 62.5em) {
+@media (width >= 23.75em) {
     .c-hero {
-        background-image: url(./images/bg-desktop.svg);
         max-width: f.rem(1440px);
-        padding: f.rem(35px) f.rem(55px);
-    }
-
-    .huddle-logo {
-        width: f.rem(200px);
+        padding: 0;
     }
 
     .c-hero__container {
-        // margin-top: f.rem(70px);
         text-align: left;
-        
-        margin: f.rem(70px) auto 0;
 
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: f.rem(50px);
     }
 
@@ -119,7 +102,7 @@
 
     .c-hero__container-text {
         margin-top: f.rem(25px);
-        text-wrap: balance
+        text-wrap: balance;
     }
 
     .c-hero__secondary-heading {

@@ -75,7 +75,11 @@ s:after {
 }
 
 body {
+  background-color: var(--color-violet);
+  background-image: url("bg-mobile.210284ac.svg");
+  background-repeat: repeat-x;
   place-content: center;
+  max-width: 23.4375rem;
   height: 100%;
   padding: .625rem;
   font-family: Poppins, sans-serif;
@@ -83,23 +87,26 @@ body {
   display: grid;
 }
 
+@media (width >= 23.75em) {
+  body {
+    background-image: url("bg-desktop.fc15d5a1.svg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    padding: 3.75rem 4.375rem;
+    display: block;
+  }
+}
+
 .c-hero {
-  background-color: var(--color-violet);
-  background-image: url("bg-mobile.210284ac.svg");
-  background-repeat: repeat-x;
   flex-direction: column;
-  max-width: 20.3125rem;
+  max-width: 23.4375rem;
+  margin-top: 5.3125rem;
   padding: 1.875rem;
   display: flex;
 }
 
-.huddle-logo {
-  width: 7.5rem;
-}
-
 .c-hero__container {
   text-align: center;
-  margin-top: 3.125rem;
 }
 
 .c-hero__container-text {
@@ -155,22 +162,16 @@ body {
   display: flex;
 }
 
-@media (width >= 62.5em) {
+@media (width >= 23.75em) {
   .c-hero {
-    background-image: url("bg-desktop.fc15d5a1.svg");
     max-width: 90rem;
-    padding: 2.1875rem 3.4375rem;
-  }
-
-  .huddle-logo {
-    width: 12.5rem;
+    padding: 0;
   }
 
   .c-hero__container {
     text-align: left;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 3.125rem;
-    margin: 4.375rem auto 0;
     display: grid;
   }
 
@@ -223,9 +224,19 @@ body {
   background-color: var(--color-soft-magenta);
 }
 
-@media (width >= 62.5em) {
+@media (width >= 23.75em) {
   .btn {
     padding: .625rem 3.4375rem;
+  }
+}
+
+.huddle-logo {
+  width: 7.5rem;
+}
+
+@media (width >= 23.75em) {
+  .huddle-logo {
+    width: 12.5rem;
   }
 }
 

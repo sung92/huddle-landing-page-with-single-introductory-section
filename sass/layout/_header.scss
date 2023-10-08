@@ -1,0 +1,14 @@
+@use "../abstracts/functions" as f;
+
+/**************************/
+/* HEADER */
+/**************************/
+.huddle-logo {
+    width: f.rem(120px);
+}
+
+@media (width >= 23.75em) {
+    .huddle-logo {
+        width: f.rem(200px);
+    }
+}
