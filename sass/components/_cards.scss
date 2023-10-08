@@ -6,11 +6,11 @@
 
 .c-hero {
     max-width: f.rem(375px);
-    margin-top: f.rem(85px);
+    margin-top: f.rem(25px);
 
     display: flex;
     flex-direction: column;
-    padding: f.rem(30px);
+    padding: f.rem(25px);
 }
 
 
@@ -84,6 +84,7 @@
 
 @media (width >= 23.75em) {
     .c-hero {
+        margin-top: f.rem(85px);
         max-width: f.rem(1440px);
         padding: 0;
     }
