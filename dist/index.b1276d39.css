@@ -77,9 +77,9 @@ s:after {
 body {
   background-color: var(--color-violet);
   background-image: url("bg-mobile.210284ac.svg");
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  background-size: contain;
   place-content: center;
-  max-width: 23.4375rem;
   height: 100%;
   padding: .625rem;
   font-family: Poppins, sans-serif;
@@ -87,13 +87,12 @@ body {
   display: grid;
 }
 
-@media (width >= 23.75em) {
+@media (width >= 43.75em) {
   body {
     background-image: url("bg-desktop.fc15d5a1.svg");
-    background-repeat: no-repeat;
+    background-size: cover;
     max-width: 100%;
     padding: 3.75rem 4.375rem;
-    display: block;
   }
 }
 
@@ -162,7 +161,7 @@ body {
   display: flex;
 }
 
-@media (width >= 23.75em) {
+@media (width >= 43.75em) {
   .c-hero {
     max-width: 90rem;
     margin-top: 5.3125rem;
@@ -177,7 +176,7 @@ body {
   }
 
   .c-hero__container-img {
-    width: 43.75rem;
+    max-height: 700px;
   }
 
   .c-hero__container-text {
@@ -225,7 +224,7 @@ body {
   background-color: var(--color-soft-magenta);
 }
 
-@media (width >= 23.75em) {
+@media (width >= 43.75em) {
   .btn {
     padding: .625rem 3.4375rem;
   }
@@ -236,7 +235,7 @@ body {
   margin: 0 1.5625rem;
 }
 
-@media (width >= 23.75em) {
+@media (width >= 43.75em) {
   .huddle-logo {
     width: 12.5rem;
   }

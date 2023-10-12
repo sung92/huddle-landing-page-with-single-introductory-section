@@ -82,7 +82,7 @@
 }
 
 
-@media (width >= 23.75em) {
+@media (width >= 43.75em) {
     .c-hero {
         margin-top: f.rem(85px);
         max-width: f.rem(1440px);
@@ -98,7 +98,7 @@
     }
 
     .c-hero__container-img {
-        width: f.rem(700px);
+        max-height: 700px;
     }
 
     .c-hero__container-text {
@@ -113,6 +113,7 @@
     .c-hero__desc {
         font-size: f.rem(16px);
         margin-top: f.rem(25px);
+        text-wrap: pretty;
     }
 
     .c-hero__logos-container {
