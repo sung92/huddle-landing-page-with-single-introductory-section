@@ -81,10 +81,10 @@
 }
 
 
-@media (width >= 43.75em) {
+@media (width >= 50em) {
     .c-hero {
         margin-top: f.rem(85px);
-        max-width: f.rem(1440px);
+        max-width: var(--page-max-width, 80rem);
         padding: 0;
     }
 
@@ -110,7 +110,8 @@
     }
 
     .c-hero__desc {
-        font-size: f.rem(16px);
+        margin-inline-start: 0;
+        max-width: 58ch;
         margin-top: f.rem(25px);
         text-wrap: pretty;
     }

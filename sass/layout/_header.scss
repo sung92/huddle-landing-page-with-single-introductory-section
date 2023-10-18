@@ -3,13 +3,28 @@
 /**************************/
 /* HEADER */
 /**************************/
+header {
+    max-width: var(--page-max-width, 80rem);
+}
+
 .huddle-logo {
-    margin: 0 f.rem(25px);;
     width: f.rem(120px);
 }
 
-@media (width >= 43.75em) {
+footer {
+    max-width: var(--page-max-width, 80rem);
+}
+
+@media (width >= 50em) {
     .huddle-logo {
         width: f.rem(200px);
     }
 }
+
+@media (width < 50em) {
+    .c-hero__container-img {
+      // note: stop image getting too huge on mobiles
+      width: 30rem;
+      margin-inline: auto;
+    }
+  }

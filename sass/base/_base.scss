@@ -46,9 +46,9 @@ body {
     place-content: center;
 }
 
-@media (width >= 43.75em) {
+@media (width >= 50em) {
   body {
-    padding: f.rem(60px) f.rem(70px);
+    padding: f.rem(60px) f.rem(22px);
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
     max-width: 100%;
